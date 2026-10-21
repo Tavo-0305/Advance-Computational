@@ -3,7 +3,7 @@ Calculation of F(x) gradient using the backpropagation algoritm
 
 Defining F(x) as: f_3 ° f_2 ° f_1 (x)
 
-Declaration of functions:
+Declaration of functions (if needed): 
 
 def f_1(x,W,b):
     return W*x + b
@@ -17,7 +17,8 @@ def F(x):
 '''
 import numpy as np
 
-#Calculating the gradient of F by hand, with respect to the parameters (W and b): 
+#Calculating the gradient of F by hand (see backprop.MD), 
+# with respect to the parameters (W and b): 
 
 def F_grad_W(x,W,b):
     prod = W @ x + b
@@ -38,8 +39,8 @@ np.random.seed(666)
 
 #Defining W and b as: 
  
-W = np.random.randint(0,2,size=(5,5))
-b = np.random.randint(0,2,size=5)
+W = np.random.randint(0,2,size=(5,5)) #values are 1 or 0
+b = np.random.randint(0,2,size=5) #values are 1 or 0
 
 for _ in testing:
     gradW = F_grad_W(_,W,b)
