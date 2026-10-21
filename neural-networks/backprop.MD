@@ -1,6 +1,6 @@
 Let $F(x): f_3 ° f_2 ° f_1 (x)$
 
-Where $f_1 = Wx + b $, $f_2=(x_1^{2},...,x_n^{2})$, $ f_3 = \sum_{i=1}^{n} x_i$. 
+Where $f_1 = Wx + b $, $f_2=(x_1^{2},...,x_n^{2})$, $f_3 = \sum_{} x_i$ 
 
 With $W \in \mathbb{R}^{5 \times 5}$, $b \land x \in \mathbb{R}^{5}$. 
 
